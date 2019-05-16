@@ -46,7 +46,7 @@ class SentenceGenerator
             }
 
             if ($tensAndUnit !== "" && $hundredth !== "") {
-                $tensAndUnit = "and " . $tensAndUnit;
+                $tensAndUnit = " " . $tensAndUnit;
             }
 
             if ($hundredth == "") {
