@@ -217,9 +217,11 @@ class Converter
         if ($whole != "") {
             $whole .= " " . $this->currencyForWhole;
         }
+        $whole = ucwords(preg_replace("/,|-/", " ", $whole));
         if ($decimal != "") {
             $decimal .= " " . $this->currencyForDecimal;
         }
+        $decimal = ucwords(preg_replace("/,|-/", " ", $decimal));
         if ($whole != "" && $decimal != "") {
             $whole .= " and ";
         }
