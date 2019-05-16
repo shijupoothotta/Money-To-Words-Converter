@@ -221,7 +221,7 @@ class Converter
             $decimal .= " " . $this->currencyForDecimal;
         }
         if ($whole != "" && $decimal != "") {
-            $whole .= "and ";
+            $whole .= " and ";
         }
 
         $sentence = $whole . $decimal;
