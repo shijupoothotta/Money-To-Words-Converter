@@ -220,6 +220,8 @@ class Converter
         $whole = ucwords(preg_replace("/,|-/", " ", $whole));
         if ($decimal != "") {
             $decimal .= " " . $this->currencyForDecimal;
+        } else {
+            $decimal .= " " . 'zero'." ". $this->currencyForDecimal; // For Zero in Puma 
         }
         $decimal = ucwords(preg_replace("/,|-/", " ", $decimal));
         if ($whole != "" && $decimal != "") {
